@@ -1,0 +1,489 @@
+/* Start hover Animation CSS */
+/* Grow */
+.cewb-animation-grow {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cewb-animation-grow:hover {
+    transform: scale(1.1);
+}
+
+/* Shrink */
+.cewb-animation-shrink {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cewb-animation-shrink:hover {
+    transform: scale(0.9);
+}
+
+/* Pulse */
+@keyframes cewb-animation-pulse {
+    25% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+}
+.cewb-animation-pulse:hover {
+    animation-name: cewb-animation-pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Pulse Grow */
+@keyframes cewb-animation-pulse-grow {
+    to {
+        transform: scale(1.1);
+    }
+}
+.cewb-animation-pulse-grow:hover {
+    animation-name: cewb-animation-pulse-grow;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Pulse Shrink */
+@keyframes cewb-animation-pulse-shrink {
+    to {
+        transform: scale(0.9);
+    }
+}
+.cewb-animation-pulse-shrink:hover {
+    animation-name: cewb-animation-pulse-shrink;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Push */
+@keyframes cewb-animation-push {
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.cewb-animation-push:hover {
+    animation-name: cewb-animation-push;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+/* Pop */
+@keyframes cewb-animation-pop {
+    50% {
+        transform: scale(1.2);
+    }
+}
+.cewb-animation-pop:hover {
+    animation-name: cewb-animation-pop;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+/* Bounce In */
+.cewb-animation-bounce-in {
+    transition-duration: 0.5s;
+}
+.cewb-animation-bounce-in:hover {
+    transform: scale(1.2);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Bounce Out */
+.cewb-animation-bounce-out {
+    transition-duration: 0.5s;
+}
+.cewb-animation-bounce-out:hover {
+    transform: scale(0.8);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Rotate */
+.cewb-animation-rotate {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cewb-animation-rotate:hover {
+    transform: rotate(4deg);
+}
+
+/* Grow Rotate */
+.cewb-animation-grow-rotate {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cewb-animation-grow-rotate:hover {
+    transform: scale(1.1) rotate(4deg);
+}
+
+/* Float */
+.cewb-animation-float {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.cewb-animation-float:hover {
+    transform: translateY(-8px);
+}
+
+/* Sink */
+.cewb-animation-sink {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.cewb-animation-sink:hover {
+    transform: translateY(8px);
+}
+
+/* Bob */
+@keyframes cewb-animation-bob {
+    0% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}
+@keyframes cewb-animation-bob-float {
+    100% {
+        transform: translateY(-8px);
+    }
+}
+.cewb-animation-bob:hover {
+    animation-name: cewb-animation-bob-float, cewb-animation-bob;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+}
+
+/* Hang */
+@keyframes cewb-animation-hang {
+    0% {
+        transform: translateY(8px);
+    }
+    50% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(8px);
+    }
+}
+@keyframes cewb-animation-hang-sink {
+    100% {
+        transform: translateY(8px);
+    }
+}
+.cewb-animation-hang:hover {
+    animation-name: cewb-animation-hang-sink, cewb-animation-hang;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+}
+
+/* Skew */
+.cewb-animation-skew {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cewb-animation-skew:hover {
+    transform: skew(-10deg);
+}
+
+/* Skew Forward */
+.cewb-animation-skew-forward {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform-origin: 0 100%;
+}
+.cewb-animation-skew-forward:hover {
+    transform: skew(-10deg);
+}
+
+/* Skew Backward */
+.cewb-animation-skew-backward {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform-origin: 0 100%;
+}
+.cewb-animation-skew-backward:hover {
+    transform: skew(10deg);
+}
+
+/* Wobble Vertical */
+@keyframes cewb-animation-wobble-vertical {
+    16.65% {
+        transform: translateY(8px);
+    }
+    33.3% {
+        transform: translateY(-6px);
+    }
+    49.95% {
+        transform: translateY(4px);
+    }
+    66.6% {
+        transform: translateY(-2px);
+    }
+    83.25% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.cewb-animation-wobble-vertical:hover {
+    animation-name: cewb-animation-wobble-vertical;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Wobble Horizontal */
+@keyframes cewb-animation-wobble-horizontal {
+    16.65% {
+        transform: translateX(8px);
+    }
+    33.3% {
+        transform: translateX(-6px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.cewb-animation-wobble-horizontal:hover {
+    animation-name: cewb-animation-wobble-horizontal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Wobble To Bottom Right */
+@keyframes cewb-animation-wobble-to-bottom-right {
+    16.65% {
+        transform: translate(8px, 8px);
+    }
+    33.3% {
+        transform: translate(-6px, -6px);
+    }
+    49.95% {
+        transform: translate(4px, 4px);
+    }
+    66.6% {
+        transform: translate(-2px, -2px);
+    }
+    83.25% {
+        transform: translate(1px, 1px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.cewb-animation-wobble-to-bottom-right:hover {
+    animation-name: cewb-animation-wobble-to-bottom-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Wobble To Top Right */
+@keyframes cewb-animation-wobble-to-top-right {
+    16.65% {
+        transform: translate(8px, -8px);
+    }
+    33.3% {
+        transform: translate(-6px, 6px);
+    }
+    49.95% {
+        transform: translate(4px, -4px);
+    }
+    66.6% {
+        transform: translate(-2px, 2px);
+    }
+    83.25% {
+        transform: translate(1px, -1px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.cewb-animation-wobble-to-top-right:hover {
+    animation-name: cewb-animation-wobble-to-top-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Wobble Top */
+@keyframes cewb-animation-wobble-top {
+    16.65% {
+        transform: skew(-12deg);
+    }
+    33.3% {
+        transform: skew(10deg);
+    }
+    49.95% {
+        transform: skew(-6deg);
+    }
+    66.6% {
+        transform: skew(4deg);
+    }
+    83.25% {
+        transform: skew(-2deg);
+    }
+    100% {
+        transform: skew(0);
+    }
+}
+.cewb-animation-wobble-top {
+    transform-origin: 0 100%;
+}
+.cewb-animation-wobble-top:hover {
+    animation-name: cewb-animation-wobble-top;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Wobble Bottom */
+@keyframes cewb-animation-wobble-bottom {
+    16.65% {
+        transform: skew(-12deg);
+    }
+    33.3% {
+        transform: skew(10deg);
+    }
+    49.95% {
+        transform: skew(-6deg);
+    }
+    66.6% {
+        transform: skew(4deg);
+    }
+    83.25% {
+        transform: skew(-2deg);
+    }
+    100% {
+        transform: skew(0);
+    }
+}
+.cewb-animation-wobble-bottom {
+    transform-origin: 100% 0;
+}
+.cewb-animation-wobble-bottom:hover {
+    animation-name: cewb-animation-wobble-bottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Wobble Skew */
+@keyframes cewb-animation-wobble-skew {
+    16.65% {
+        transform: skew(-12deg);
+    }
+    33.3% {
+        transform: skew(10deg);
+    }
+    49.95% {
+        transform: skew(-6deg);
+    }
+    66.6% {
+        transform: skew(4deg);
+    }
+    83.25% {
+        transform: skew(-2deg);
+    }
+    100% {
+        transform: skew(0);
+    }
+}
+.cewb-animation-wobble-skew:hover {
+    animation-name: cewb-animation-wobble-skew;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Buzz */
+@keyframes cewb-animation-buzz {
+    50% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+.cewb-animation-buzz:hover {
+    animation-name: cewb-animation-buzz;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Buzz Out */
+@keyframes cewb-animation-buzz-out {
+    10% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        transform: translateX(1px) rotate(0);
+    }
+    100% {
+        transform: translateX(-1px) rotate(0);
+    }
+}
+.cewb-animation-buzz-out:hover {
+    animation-name: cewb-animation-buzz-out;
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+/* End hover Animation CSS */
